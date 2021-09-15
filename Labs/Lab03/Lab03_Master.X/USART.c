@@ -11,7 +11,13 @@
 //-------------------------------------------------------
 #include <xc.h>
 #include "USART.h"
-
+#include <stdint.h>
+#include <pic16f887.h>
+#include <xc.h>
+#include <string.h>
+#include <stdlib.h>
+#include<stdbool.h>
+#include <stdio.h>
 //-------------------------------------------------------
 //  Constantes
 //-------------------------------------------------------
@@ -19,9 +25,9 @@
 //-------------------------------------------------------
 //   Funciones
 //-------------------------------------------------------
-void send_char (char dato){
-    while(!TXIF);           //Transmisión
+void send_char (unsigned char dato){
     TXREG = dato;       //Muestro caracter
+    while(!TXIF);           //Transmisión
 }
 
 void send_str(char st[]){

@@ -106,7 +106,7 @@ void main(void) {
 //-------------------------------------------------------
 void setup(void){               //Configuraciones del PIC
     //Entradas digitales y analogicas
-    ANSEL  = 0x00;               //se utiliza canal 5 y 6
+    ANSEL  = 0x00;               //
     ANSELH = 0x00;          
     
     //Entradas y Salidas
