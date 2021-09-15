@@ -1,7 +1,7 @@
 /*
  * File:          Lab06.c
  * Dispositivo:   Tiva C TM4123G
- * Autor:         Alejandro García Aguirre
+ * Autor:         Alejandro García Aguirre - 19163
  * Compilador:    Energia 1.8
  * 
  * Programa:      Laboratorio 6 - Juego de carreras
