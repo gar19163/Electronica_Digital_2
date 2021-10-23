@@ -73,10 +73,6 @@ void setup() {
   pinMode(PUSH2, INPUT_PULLUP);
   pinMode(12, OUTPUT);     // change this to 53 on a mega
 
-  if (!SD.begin(32)) {
-    Serial.println("initialization failed!");
-    return;
-  }
   Serial.println("initialization done.");
 
 
