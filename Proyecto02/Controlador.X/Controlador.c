@@ -94,7 +94,7 @@ void setup(void){               //Configuraciones del PIC
     ANSELH = 0x00;          
     
     //Entradas y Salidas
-    TRISE   = 0b00001111;
+    TRISB   = 0b00001111;
     TRISCbits.TRISC0= 0;                //Rs
     TRISCbits.TRISC1= 0;                //EN
     TRISCbits.TRISC7= 1;                //RX

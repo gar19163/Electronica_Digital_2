@@ -862,15 +862,13 @@ bool Collision(int x1, int y1, int w1, int h1, int x2, int y2, int w2, int h2) {
 //***************************************************************************************************************************************
 void menu_principal(void) {
   LCD_Clear(0x00);
-  String Mun = "Pablo Munoz";
   String Ale = "Alejandro Garcia";
-  LCD_Print(Mun, 80, 60, 2, 0xffff, 0x0000);
   LCD_Print(Ale, 30, 130, 2, 0xffff, 0x0000);
   delay(1000);
   LCD_Clear(0x00);
   mapeo_SD("Fonfom.txt");
   //LCD_Bitmap(unsigned int x, unsigned int y, unsigned int width, unsigned int height, unsigned char bitmap[]);
-  LCD_Bitmap(0, 0, 320, 240, menu);
+  //LCD_Bitmap(0, 0, 320, 240, menu);
   //LCD_Print(String text, int x, int y, int fontSize, int color, int background)
 
   String titulo = "Donkey Kong";
